@@ -9,11 +9,7 @@ const config = new Configuration({
 const openai = new OpenAIApi(config)
 
 const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
-    ]
+    intents:0
 })
 
 client.once(Events.ClientReady, (clientUser) => {
